@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex">
+  <title>Casco SOS · Invitación</title>
+  <link rel="stylesheet" href="unirse.css">
+</head>
+<body>
+  <main class="contenido">
+    <header class="cabecera">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M6 62C6 20 30 8 54 8c26 0 42 22 42 54z" fill="currentColor"/><rect x="4" y="60" width="92" height="15" rx="7" fill="currentColor"/></svg>
+      <h1>Casco SOS</h1>
+    </header>
+
+    <section id="valida" class="tarjeta" hidden>
+      <h2 id="titulo">Te han invitado a seguir a un ciclista</h2>
+      <p>Si le pasa algo, recibirás su aviso con su ubicación, cifrado de extremo a extremo: ni siquiera el servidor puede leerlo.</p>
+      <p id="sinapp" class="aviso" hidden>Parece que no tienes la app instalada. Descárgala, instálala y vuelve a abrir este mismo enlace (o vuelve a escanear el QR).</p>
+
+      <a id="b-abrir" class="boton" href="#">Abrir en la app</a>
+      <a id="b-descargar" class="boton sec" href="/descargas/CascoSOS-debug.apk">No la tengo: descargar e instalar la app</a>
+      <p id="ayuda-instalar" class="nota" hidden>Android te pedirá permiso para instalar apps desde el navegador (una sola vez): acéptalo, abre el archivo descargado y pulsa «Instalar». Al terminar, vuelve a esta página y pulsa «Abrir en la app».</p>
+      <a id="b-visor" class="boton sec" href="#">Seguirle desde el navegador (sin instalar nada)</a>
+      <p class="nota">El navegador solo avisa mientras esta página está abierta en pantalla. La app avisa también con el móvil bloqueado.</p>
+      <p id="solo-android" class="nota" hidden>La app es solo para Android. En iPhone u ordenador usa el navegador.</p>
+    </section>
+
+    <section id="invalida" class="tarjeta" hidden>
+      <h2>Este enlace no es una invitación válida</h2>
+      <p>Está incompleto o se ha cortado al copiarlo. Pide al ciclista que te enseñe el QR otra vez y escanéalo con la cámara.</p>
+    </section>
+  </main>
+  <noscript><p style="padding:16px">Esta página necesita JavaScript para leer la invitación.</p></noscript>
+  <script src="unirse.js"></script>
+</body>
+</html>
